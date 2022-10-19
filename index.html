@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pertemuan 5 E-Learning | Pemrograman Web 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <!---Header-->
+    <header>
+      <div class="user">
+        <img src="assets/img/pp.jpg" alt="profil" />
+        <h3 class="name">Dani kurniadi</h3>
+        <p class="post">Informatic Student</p>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--Home Section-->
+    <section class="home" id="home">
+      <h3>Wilujeng Sumping :)</h3>
+      <h1>Nami Abi <span>Dani Kurniadi</span></h1>
+      <p>
+        Hidup Seperti Larry </i></i>
+      </i>
+      </p>
+      <a href="#about"
+        ><button class="btn">About Me <i class="fas fa-user"></i></button
+      ></a>
+    </section>
+
+    <!--About Section-->
+    <section class="about" id="about">
+      <h1 class="heading"><span>About</span> Me</h1>
+      <div class="row">
+        <div class="info">
+          <h3><span>Name :</span> Dani Kurniadi</h3>
+          <h3><span>NPM :</span> 20552011218</h3>
+          <h3><span>Class :</span> TIF RM 20</h3>
+          <h3><span>Date Of Birth :</span> 31 Februari 1999</h3>
+          <h3><span>Age :</span> 23</h3>
+          <h3><span>Address :</span> Cililin , West Bandung</h3>
+          <h3><span>MBTI :</span> ENFP</h3>
+          <a href="#"
+            ><button class="btn" onclick="typeWriter()">
+              Quotes <i class="fa-regular fa-comment"></i></i></i></button
+          ></a>
+          <p id="typing"></p>
+        </div>
+      </div>
+    </section>
+
+    <!--Education Section-->
+
+    <section class="education" id="education">
+      <h1 class="heading"><span>My</span> Education</h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2020 - now</span>
+          <h3>Sekolah Tinggi Teknologi Bandung</h3>
+          <p>Sekolah Tinggi Teknologi Bandung berdiri sejak tahun 1991,yang di prakarsai oleh alumni Institut Teknologi Bandung (ITB). 
+            <br> Sekolah Tinggi Teknologi Bandung adalah menjadi perguruan tinggi yang berdaya saing dan unggul secara nasional pada tahun 2025. 
+            <br>
+            <br>Dengan harapan dapat memberikan kesempatan yang lebih luas kepada masyarakat untuk mendapatkan pendidikan di Perguruan Tinggi serta bertujuan untuk menghasilkan sarjana dan tenaga ahli yang kompeten di bidangnya dan mampu menghadapi tantangan global, mampu memanfaatkan berbagai peluang yang ada di sekelilingnya, dan memiliki jiwa kewirausahaan yang tinggi dengan harapan dapat menjadi seorang pengusaha sukses serta dapat menciptakan kesempatan kerja bagi lingkungannya. 
+            <br>
+            <br>Saat ini Sekolah Tinggi Teknologi Bandung memiliki 3 Program Studi, yaitu Teknik Industri, Teknik Informatika dan Desain Komunikasi Visual. Kurikulum yang digunakan selalu disesuaikan dengan kebutuhan, baik kebutuhan industri manufaktur ataupun industri lain. 
+            <br>
+            <br>STTB yang berkedudukan di Jl. Soekarno Hatta No. 378 Bandung, saat ini sudah mendapatkan kepercayaan dari masyarakat, ini bisa dilihat dari meningkatnya jumlah Mahasiswa dari berbagai Program Studi yang berasal dari berbagai daerah, mulai dari Aceh sampai Papua, bahkan ada mahasiswa yang berasal dari luar Negeri seperti Malaysia, Qatar, Timor Leste, dan lain-lain.
+          </p>
+        </div>
+
+        <div class="box2">
+          <img src="assets/img/logo.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <script>
+      var i = 0;
+      var txt = 'Dimana ada niat di situ ada jalan , kalau ga ada jalan , berarti kesasar ';
+      var speed = 50;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typing").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+  </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
